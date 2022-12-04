@@ -1,4 +1,4 @@
-import { observer, Observer } from "mobx-react-lite";
+import { observer } from "mobx-react-lite";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Button, Container, Dropdown, Image, Menu } from "semantic-ui-react";
@@ -39,7 +39,7 @@ const NavBar = () => {
             <Dropdown.Menu>
               <Dropdown.Item
                 as={Link}
-                to={`/profile/${user?.username}`}
+                to={`/profiles/${user?.username}`}
                 text="My Profile"
               />
               <Dropdown.Item onClick={logout} text="Logout" icon="power" />
