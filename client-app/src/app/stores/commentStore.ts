@@ -1,5 +1,4 @@
 import { HubConnection, HubConnectionBuilder, LogLevel } from "@microsoft/signalr";
-import { throws } from "assert";
 import { makeAutoObservable, runInAction } from "mobx";
 import { ChatComment } from "../models/comment";
 import { store } from "./store";
